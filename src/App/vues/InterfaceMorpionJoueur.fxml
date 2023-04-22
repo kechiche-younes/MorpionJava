@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="628.0" style="-fx-background-color: #566573;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controllers.InterfaceMorpionJoueur">
+   <children>
+      <Pane fx:id="panebtn" layoutX="81.0" layoutY="83.0" prefHeight="374.0" prefWidth="355.0">
+         <children>
+            <Button fx:id="c1" layoutX="6.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #BDBDBD;" />
+            <Button fx:id="c2" layoutX="6.0" layoutY="122.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #bdbdbd;" />
+            <Button fx:id="c3" layoutX="6.0" layoutY="248.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #bdbdbd;" />
+            <Button fx:id="c4" layoutX="124.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #bdbdbd;" />
+            <Button fx:id="c5" layoutX="124.0" layoutY="124.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #bdbdbd;" />
+            <Button fx:id="c6" layoutX="124.0" layoutY="248.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #bdbdbd;" />
+            <Button fx:id="c7" layoutX="242.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #bdbdbd;" />
+            <Button fx:id="c8" layoutX="242.0" layoutY="126.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #bdbdbd;" />
+            <Button fx:id="c9" layoutX="242.0" layoutY="248.0" mnemonicParsing="false" onAction="#jouer" prefHeight="126.0" prefWidth="118.0" style="-fx-background-color: #bdbdbd;" />
+            <Line endX="100.0" endY="-90.0" layoutX="24.0" layoutY="90.0" startX="100.0" startY="284.0" stroke="WHITE" />
+            <Line endX="100.0" endY="-90.0" layoutX="142.0" layoutY="92.0" startX="100.0" startY="284.0" stroke="WHITE" />
+            <Line endX="120.0" layoutX="240.0" layoutY="124.0" startX="-235.39999389648438" stroke="#f7f7f7" />
+            <Line endX="253.20001220703125" layoutX="105.0" layoutY="248.0" startX="-100.0" stroke="WHITE" />
+         </children>
+      </Pane>
+      <Button id="sale" layoutX="455.0" layoutY="475.0" mnemonicParsing="false" onAction="#onRetour" prefHeight="50.0" prefWidth="159.0" style="-fx-background-color: #1abc9c;" stylesheets="@../../../stylesheet.css" text="Retour" />
+      <Button id="sale" layoutX="15.0" layoutY="481.0" mnemonicParsing="false" onAction="#onRePlay" prefHeight="50.0" prefWidth="159.0" style="-fx-background-color: #4d6a6d;" stylesheets="@../../../stylesheet.css" text="Rejouer" />
+      <Label fx:id="joueur2" layoutX="519.0" layoutY="315.0" prefHeight="30.0" prefWidth="100.0" text="change" textFill="#b5b5b5">
+         <font>
+            <Font name="Ink Free" size="19.0" />
+         </font></Label>
+      <ImageView fx:id="imageview2" fitHeight="146.0" fitWidth="169.0" layoutX="456.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <Button id="sale" fx:id="change_nom" layoutX="496.0" layoutY="14.0" mnemonicParsing="false" onAction="#onNom" opacity="0.69" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #566573;" stylesheets="@../../../stylesheet.css" text="changer nom" textFill="#d0d0d0" />
+      <Label fx:id="joueur1" layoutX="467.0" layoutY="242.0" prefHeight="17.0" prefWidth="100.0" text="change " textAlignment="CENTER" textFill="#b5b5b5">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font></Label>
+      <ImageView fx:id="tour" fitHeight="67.0" fitWidth="100.0" layoutX="209.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fill="#4caf50" layoutX="517.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="v" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#ad3d3d" layoutX="528.0" layoutY="307.0" rotate="29.7" strokeType="OUTSIDE" strokeWidth="0.0" text="s" wrappingWidth="13.89111328125">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Label fx:id="gang" layoutX="216.0" layoutY="473.0" prefHeight="54.0" prefWidth="279.0" textAlignment="CENTER" textFill="#9e0707">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

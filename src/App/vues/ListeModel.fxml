@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #566573;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controllers.ListeModelController">
+   <children>
+      <Text fill="#b5b5b5" layoutX="157.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste model " textAlignment="CENTER" wrappingWidth="306.93670654296875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="6.0" layoutY="62.0" prefHeight="234.0" prefWidth="586.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="234.0" prefWidth="582.0">
+               <children>
+                  <ListView fx:id="indice" blendMode="MULTIPLY" layoutX="4.0" layoutY="4.0" prefHeight="213.0" prefWidth="307.0" style="-fx-background-color: bdbdbd;" />
+                  <ListView fx:id="indiceS" layoutX="316.0" layoutY="4.0" prefHeight="213.0" prefWidth="252.0" style="-fx-background-color: bdbdbd;" />
+      
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button id="sale" fx:id="sup" layoutX="14.0" layoutY="323.0" mnemonicParsing="false" onAction="#SupprimerModels" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: B22222;" stylesheets="@../../../stylesheet.css" text="supprimé" textFill="WHITE" />
+   </children>
+</AnchorPane>
